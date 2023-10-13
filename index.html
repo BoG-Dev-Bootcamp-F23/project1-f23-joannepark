@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Poke Deck</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h2>Bits of Good Mid-Semester Project</h2>
+  <div class="container">
+    <div class="left-section">
+      <div id="pokemon-info">
+        <img id="pokemon-image" alt="Pokemon Image">
+        <div class="name-types-container">
+          <p id="pokemon-name" class="name-box"></p>
+          <div class="types-text">Types:</div>
+          <div id="typesBox" class="types-box"></div>
+        </div>
+        <div class="navigation-buttons">
+          <button onclick="loadPokemon(-1)" class="nav-button">&#60;</button>
+          <button onclick="loadPokemon(1)" class="nav-button">&#62;</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="right-section">
+      <div id="infoText" class="info-text">Info</div>
+      <div id="infoBox" class="info-box"></div>
+      <button onclick="showInfo()" id="infoBtn">Info</button>
+      
+      <div id="movesText" class="info-text moves-box">Moves</div>
+      <button onclick="showMoves()" id="movesBtn">Moves</button>
+    </div>
+  </div>
+
+  <script src="main.js"></script>
+</body>
+</html>
